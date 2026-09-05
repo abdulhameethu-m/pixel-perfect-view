@@ -1,9 +1,9 @@
-import { motion, useInView } from "motion/react";
+import { motion, useInView, type TargetAndTransition } from "motion/react";
 import { useRef, type ReactNode } from "react";
 
 type Variant = "ink" | "rise" | "curve";
 
-const states: Record<Variant, { from: object; to: object }> = {
+const states: Record<Variant, { from: TargetAndTransition; to: TargetAndTransition }> = {
   ink: {
     from: { clipPath: "inset(0 100% 0 0)", opacity: 1 },
     to: { clipPath: "inset(0 0% 0 0)", opacity: 1 },
