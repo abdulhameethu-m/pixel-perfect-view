@@ -1,21 +1,18 @@
+import logoUrl from "@/assets/IMG-20250902-WA0051.jpg.jpeg";
+
 /**
- * Brand marks. The circular wordmark is a temporary stand-in until the real
- * Henna Aura logo file is supplied — swap the inner content for the image then.
+ * Brand marks with the real Henna Aura logo blended seamlessly.
  */
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-3 ${className}`}>
-      <span className="relative grid size-10 shrink-0 place-items-center rounded-full bg-ink ring-1 ring-cream/25">
-        <Feather className="size-4 text-teal-soft" />
-        <span className="absolute inset-0 rounded-full border border-teal/50 slow-spin" />
-      </span>
-      <span className="leading-none">
-        <span className="block font-display text-lg tracking-wide text-cream">
-          Henna
-        </span>
-        <span className="eyebrow block text-[0.55rem] text-teal-soft">
-          Aura
-        </span>
+    <span className={`inline-flex items-center ${className}`}>
+      <span className="relative flex shrink-0 items-center justify-center overflow-hidden rounded-full size-14 md:size-[4.25rem]">
+        {/* We use scale and mix-blend-screen to clip away any white padding and make the black circle completely transparent, keeping only the white text and teal strokes floating elegantly */}
+        <img
+          src={logoUrl}
+          alt="Henna Aura"
+          className="w-[125%] h-[125%] max-w-none object-cover mix-blend-screen transition-transform duration-500 hover:scale-[1.35]"
+        />
       </span>
     </span>
   );

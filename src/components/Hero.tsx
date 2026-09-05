@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import heroHands from "@/assets/hero-hands.jpg";
+import heroHands from "@/assets/file_000000004cd482118441827cefba548b.png";
 import { site, waLinks } from "@/data/site";
 import { BrushRing } from "./Brand";
 import { Cta } from "./Cta";

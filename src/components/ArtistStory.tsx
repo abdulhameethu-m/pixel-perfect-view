@@ -1,4 +1,4 @@
-import artist from "@/assets/artist.jpg";
+import artist from "@/assets/IMG-20250826-WA0033.jpg.jpeg";
 import { site } from "@/data/site";
 import { Reveal, StrokeLine } from "./Reveal";
 

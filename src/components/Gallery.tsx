@@ -1,14 +1,14 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
-import g1 from "@/assets/g1.jpg";
-import g3 from "@/assets/g3.jpg";
-import g4 from "@/assets/g4.jpg";
-import g5 from "@/assets/g5.jpg";
-import g6 from "@/assets/g6.jpg";
-import g8 from "@/assets/g8.jpg";
-import g9 from "@/assets/g9.jpg";
-import heroHands from "@/assets/hero-hands.jpg";
-import artVertical from "@/assets/art-vertical.jpg";
+import g1 from "@/assets/IMG-20260725-WA0032.jpg.jpeg";
+import g3 from "@/assets/IMG-20260725-WA0044.jpg.jpeg";
+import g4 from "@/assets/IMG-20260725-WA0131.jpg.jpeg";
+import g5 from "@/assets/IMG-20260725-WA0141.jpg.jpeg";
+import g6 from "@/assets/IMG-20260725-WA0145.jpg.jpeg";
+import g8 from "@/assets/IMG-20260725-WA0157.jpg.jpeg";
+import g9 from "@/assets/IMG-20260725-WA0171.jpg.jpeg";
+import heroHands from "@/assets/IMG-20250917-WA0001.jpg.jpeg";
+import artVertical from "@/assets/IMG-20260220-WA0007.jpg.jpeg";
 import { RevealItem } from "./Reveal";
 
 type Shot = { src: string; alt: string; category: string; span: string };

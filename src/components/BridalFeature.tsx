@@ -1,4 +1,4 @@
-import bridal from "@/assets/bridal.jpg";
+import bridal from "@/assets/file_000000004cd482118441827cefba548b.png";
 import { waLinks } from "@/data/site";
 import { Cta } from "./Cta";
 

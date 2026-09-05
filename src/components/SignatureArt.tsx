@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import artVertical from "@/assets/art-vertical.jpg";
+import artVertical from "@/assets/IMG-20260220-WA0007.jpg.jpeg";
 import { Reveal } from "./Reveal";
 
 const labels = ["Floral", "Botanical", "Traditional", "Contemporary"];

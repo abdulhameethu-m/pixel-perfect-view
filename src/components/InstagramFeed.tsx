@@ -1,9 +1,9 @@
-import g1 from "@/assets/g1.jpg";
-import g3 from "@/assets/g3.jpg";
-import g4 from "@/assets/g4.jpg";
-import g5 from "@/assets/g5.jpg";
-import g6 from "@/assets/g6.jpg";
-import g8 from "@/assets/g8.jpg";
+import g1 from "@/assets/IMG-20260725-WA0032.jpg.jpeg";
+import g3 from "@/assets/IMG-20260725-WA0044.jpg.jpeg";
+import g4 from "@/assets/IMG-20260725-WA0131.jpg.jpeg";
+import g5 from "@/assets/IMG-20260725-WA0141.jpg.jpeg";
+import g6 from "@/assets/IMG-20260725-WA0145.jpg.jpeg";
+import g8 from "@/assets/IMG-20260725-WA0157.jpg.jpeg";
 import { site } from "@/data/site";
 import { Cta } from "./Cta";
 import { Reveal } from "./Reveal";

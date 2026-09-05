@@ -1,8 +1,8 @@
-import cones from "@/assets/product-cones.jpg";
-import powder from "@/assets/ing-powder.jpg";
-import lemon from "@/assets/ing-lemon.jpg";
-import sugar from "@/assets/ing-sugar.jpg";
-import oil from "@/assets/ing-oil.jpg";
+import conesVideo from "@/assets/VID-20260727-WA0010.mp4";
+import powder from "@/assets/file_000000004cd482118441827cefba548b.png";
+import lemon from "@/assets/file_00000000f684720794d179f384aac9d0.png";
+import sugar from "@/assets/file_00000000faf48209bcfbf416f88e314f.png";
+import oil from "@/assets/IMG_20250914_095219_172.jpg.jpeg";
 import { site, waLinks } from "@/data/site";
 import { Cta } from "./Cta";
 import { Reveal, StrokeLine } from "./Reveal";
@@ -64,12 +64,12 @@ export function HennaProduct() {
 
           <Reveal variant="curve">
             <figure className="relative">
-              <img
-                src={cones}
-                alt="Two handmade Henna Aura natural henna cones on a dark surface with henna powder, lemon and leaves"
-                width={1440}
-                height={1024}
-                loading="lazy"
+              <video
+                src={conesVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="aspect-4/3 w-full object-cover"
               />
               <Feather className="absolute -right-2 -top-4 size-10 text-teal-soft/70" />
