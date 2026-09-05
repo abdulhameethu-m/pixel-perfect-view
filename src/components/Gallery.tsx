@@ -123,7 +123,7 @@ export function Gallery() {
           </ul>
         </div>
 
-        <div className="mt-12 grid auto-rows-[9rem] grid-cols-2 gap-2.5 sm:auto-rows-[11rem] sm:grid-cols-4 sm:gap-4 lg:auto-rows-[13rem]">
+        <div className="mt-12 grid auto-rows-[9rem] grid-flow-row-dense grid-cols-2 gap-2.5 sm:auto-rows-[11rem] sm:grid-cols-4 sm:gap-4 lg:auto-rows-[13rem]">
           {shots.map((s, i) => (
             <RevealItem
               key={s.src + i}
