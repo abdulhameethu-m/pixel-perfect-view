@@ -72,7 +72,7 @@ const shots: Shot[] = [
 
 export function Gallery() {
   const [index, setIndex] = useState<number | null>(null);
-  const open = index !== null;
+  const current = index === null ? null : shots[index];
 
   const close = useCallback(() => setIndex(null), []);
   const step = useCallback(
@@ -82,7 +82,7 @@ export function Gallery() {
   );
 
   useEffect(() => {
-    if (!open) return;
+    if (!current) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") close();
       if (e.key === "ArrowRight") step(1);
@@ -94,7 +94,7 @@ export function Gallery() {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [open, close, step]);
+  }, [current, close, step]);
 
   return (
     <section id="gallery" className="section-pad bg-background">
@@ -157,7 +157,7 @@ export function Gallery() {
       </div>
 
       <AnimatePresence>
-        {open && index !== null && (
+        {current !== null && index !== null && (
           <motion.div
             className="fixed inset-0 z-[70] flex flex-col bg-ink/97 backdrop-blur-sm"
             initial={{ opacity: 0 }}
@@ -170,7 +170,7 @@ export function Gallery() {
           >
             <div className="flex items-center justify-between px-5 py-4">
               <span className="eyebrow text-[0.625rem] text-teal-soft">
-                {shots[index].category}
+                {current.category}
               </span>
               <button
                 type="button"
@@ -184,8 +184,8 @@ export function Gallery() {
             <div className="flex min-h-0 flex-1 items-center justify-center px-4 pb-4">
               <motion.img
                 key={index}
-                src={shots[index].src}
-                alt={shots[index].alt}
+                src={current.src}
+                alt={current.alt}
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
