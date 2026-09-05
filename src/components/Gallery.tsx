@@ -157,7 +157,7 @@ export function Gallery() {
       </div>
 
       <AnimatePresence>
-        {current !== null && index !== null && (
+        {current && index !== null && (
           <motion.div
             className="fixed inset-0 z-[70] flex flex-col bg-ink/97 backdrop-blur-sm"
             initial={{ opacity: 0 }}
