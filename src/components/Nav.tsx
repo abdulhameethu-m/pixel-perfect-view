@@ -76,7 +76,7 @@ export function Nav() {
 
       {/* Full-screen mobile menu */}
       <div
-        className={`fixed inset-0 z-60 bg-ink transition-opacity duration-500 lg:hidden ${
+        className={`fixed inset-0 z-[60] bg-ink transition-opacity duration-500 lg:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
