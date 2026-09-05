@@ -9,7 +9,7 @@ import g8 from "@/assets/g8.jpg";
 import g9 from "@/assets/g9.jpg";
 import heroHands from "@/assets/hero-hands.jpg";
 import artVertical from "@/assets/art-vertical.jpg";
-import { Reveal } from "./Reveal";
+import { RevealItem } from "./Reveal";
 
 type Shot = { src: string; alt: string; category: string; span: string };
 
@@ -125,9 +125,8 @@ export function Gallery() {
 
         <div className="mt-12 grid auto-rows-[9rem] grid-cols-2 gap-2.5 sm:auto-rows-[11rem] sm:grid-cols-4 sm:gap-4 lg:auto-rows-[13rem]">
           {shots.map((s, i) => (
-            <Reveal
+            <RevealItem
               key={s.src + i}
-              variant="curve"
               delay={(i % 4) * 0.06}
               className={`${s.span} min-h-0`}
             >
@@ -151,7 +150,7 @@ export function Gallery() {
                   ↗
                 </span>
               </button>
-            </Reveal>
+            </RevealItem>
           ))}
         </div>
       </div>
